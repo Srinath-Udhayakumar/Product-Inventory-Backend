@@ -56,7 +56,7 @@ public class ProductTable {
 
     @Override
     public String toString() {
-        return "BioDataTable{" +
+        return "ProductDataTable{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
