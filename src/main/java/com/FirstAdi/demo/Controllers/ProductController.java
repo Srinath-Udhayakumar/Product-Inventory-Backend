@@ -21,7 +21,7 @@ public class ProductController {
         System.out.println(request);
         if(request.getId()!=null){
             return new ResponseEntity<>(    
-                    new ApiResponseVo("FAILED","Create request cannot contain ID"), HttpStatus.BAD_REQUEST
+                    new ApiResponseVo("FAILED","Create request should not contain ID"), HttpStatus.BAD_REQUEST
             );
         }
         productDao.save(request);
